@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Transactions.css">
+    <title>BudgetFrog</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside id = "sidebar">
+            <div class="toggle">
+                <!-- <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Budget<span class="success">Frog</span></h2>
+                </div>-->
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                    <h2><span class="success">Close</span></h2>
+                </div>
+            </div>
+            <!-- Sidebar Section sidebar -->
+            <div class="sidebar">
+                    <a href="/Homepage/Homepage.html">
+                        <span class="material-symbols-outlined">
+                            home
+                            </span>
+                        <h3>Home</h3>
+                    </a>
+                    
+
+
+
+
+                    <a href="/Dashboard/Dashboardnew.html">
+                        <span class="material-symbols-outlined">
+                            dashboard
+                            </span>
+                        <h3>Overview</h3>
+                    </a>
+                    <a href="/Transactions/TransactionsNew.html">
+                        <span class="material-symbols-outlined">
+                            autorenew
+                            </span>
+                        <h3>Transactions</h3>
+                        <span class="message-count">27</span>
+                    </a>
+                    <a href="/IncomeExpenses/IncomeNew.html">
+                        <span class="material-symbols-outlined">
+                            swap_vert
+                            </span>
+                        <h3>Income/Expense</h3>
+                    </a>
+                    <a href="/Budget/BudgetNew.html">
+                        <span class="material-symbols-outlined">
+                            clock_loader_80
+                            </span>
+                        <h3>Budget</h3>
+                    </a>               
+                    <a href="/Homepage/Homepage.html">
+                        <span class="material-symbols-outlined">
+                            settings
+                            </span>
+                        <h3>Settings</h3>
+                    </a>  
+                    <a href="/Homepage/Homepage.html">
+                        <span class="material-symbols-outlined">
+                            help
+                            </span>
+                        <h3>Help</h3>
+                    </a>
+                    <a href="/Login/Login.html">
+                        <span class="material-symbols-outlined">
+                            logout
+                            </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Transactions</h1>
+            <!-- Analyses -->
+            
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            <div class="new-users">
+                
+                <div class="user-list">
+                    <!--<h2 class ="centered">Budget</h2>-->
+                    <section class="table__header">
+                        
+                        <div class="input-group">
+                            <input type="search" placeholder="Search Data...">
+                            <img src="images/search.png" alt="">
+                        </div>
+                        <div class="export__file">
+                            <label for="export-file" class="export__file-btn" title="Export File"></label>
+                            <input type="checkbox" id="export-file">
+                            <div class="export__file-options">
+                                <label>Export As &nbsp; &#10140;</label>
+                                <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                                <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                                <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                                <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                            </div>
+                        </div>
+                    </section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Order Date <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> <img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                                <td> Seoul </td>
+                                <td> 17 Dec, 2022 </td>
+                                <td>
+                                    <p class="status delivered">Delivered</p>
+                                </td>
+                                <td> <strong> $128.90 </strong></td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td><img src="images/Jeet Saru.png" alt=""> Jeet Saru </td>
+                                <td> Kathmandu </td>
+                                <td> 27 Aug, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$5350.50</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td><img src="images/Sonal Gharti.jpg" alt=""> Sonal Gharti </td>
+                                <td> Tokyo </td>
+                                <td> 14 Mar, 2023 </td>
+                                <td>
+                                    <p class="status shipped">Shipped</p>
+                                </td>
+                                <td> <strong>$210.40</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 4</td>
+                                <td><img src="images/Alson GC.jpg" alt=""> Alson GC </td>
+                                <td> New Delhi </td>
+                                <td> 25 May, 2023 </td>
+                                <td>
+                                    <p class="status delivered">Delivered</p>
+                                </td>
+                                <td> <strong>$149.70</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 5</td>
+                                <td><img src="images/Sarita Limbu.jpg" alt=""> Sarita Limbu </td>
+                                <td> Paris </td>
+                                <td> 23 Apr, 2023 </td>
+                                <td>
+                                    <p class="status pending">Pending</p>
+                                </td>
+                                <td> <strong>$399.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 6</td>
+                                <td><img src="images/Alex Gonley.jpg" alt=""> Alex Gonley </td>
+                                <td> London </td>
+                                <td> 23 Apr, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$399.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 7</td>
+                                <td><img src="images/Alson GC.jpg" alt=""> Jeet Saru </td>
+                                <td> New York </td>
+                                <td> 20 May, 2023 </td>
+                                <td>
+                                    <p class="status delivered">Delivered</p>
+                                </td>
+                                <td> <strong>$399.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 8</td>
+                                <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
+                                <td> Islamabad </td>
+                                <td> 30 Feb, 2023 </td>
+                                <td>
+                                    <p class="status pending">Pending</p>
+                                </td>
+                                <td> <strong>$149.70</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$249.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$249.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$249.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$249.99</strong> </td>
+                            </tr>
+                            <tr>
+                                <td> 9</td>
+                                <td><img src="images/Alex Gonley.jpg" alt=""> Alson GC </td>
+                                <td> Dhaka </td>
+                                <td> 22 Dec, 2023 </td>
+                                <td>
+                                    <p class="status cancelled">Cancelled</p>
+                                </td>
+                                <td> <strong>$249.99</strong> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                    
+                </div>
+                
+                
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            
+
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    
+
+
+
+
+                    <span class="material-icons-sharp">
+                        light_mode
+                    </span>
+
+
+                    <span class="material-icons-sharp active">
+                        dark_mode
+                    </span>
+
+                    
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>David</b></p>
+                        <small class="text-muted">Beckham</small>
+                    </div>
+                    <div class="profile-photo" id="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                <a href="/Homepage/Homepage.html">
+                    <img src="images/logo.png">
+                </a>
+                    <h2>Budget<h2>
+                    <h2 id="animated-word">Frog</h2>  
+                    <p>Welcome to our pond</p>
+                    <div class="lightning"></div>
+                </div>
+            </div>
+            
+            
+            
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+                
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            account_balance
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Bank</h3>
+                            <small class="text_muted">
+                               Pay $200 to Account no.585555633
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            engineering
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>CEO</h3>
+                            <small class="text_muted">
+                               Pay $100 to Account no.2252177252
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                
+                </div><div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            savings
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Savings</h3>
+                            <small class="text_muted">
+                                Credit $566 to savings account
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                    
+                </div><div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Wallet</h3>
+                            <small class="text_muted">
+                               Move $54 to my food wallet
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            checkbook
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Cheque</h3>
+                            <small class="text_muted">
+                               pay $458 to Acoount No. 65454554
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="Dashboard.js"></script>
+    <script src="Transactiontable.js"></script>
+    
+    
+</body>
+
+</html>

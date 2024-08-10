@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Budget.css">
+    <link rel="stylesheet" href="transformgraph.css">
+    <link rel="stylesheet" href="Editbox.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+   
+    <title>BudgetFrog</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside id = "sidebar">
+            <div class="toggle">
+                <!-- <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Budget<span class="success">Frog</span></h2>
+                </div>-->
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                    <h2><span class="success">Close</span></h2>
+                </div>
+            </div>
+            <!-- Sidebar Section sidebar -->
+            <div class="sidebar">
+                <a href="/Homepage/Homepage.html">
+                    <span class="material-symbols-outlined">
+                        home
+                        </span>
+                    <h3>Home</h3>
+                </a>
+                
+
+
+
+
+                <a href="/Dashboard/Dashboardnew.html">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                        </span>
+                    <h3>Overview</h3>
+                </a>
+                <a href="/Transactions/TransactionsNew.html">
+                    <span class="material-symbols-outlined">
+                        autorenew
+                        </span>
+                    <h3>Transactions</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="/IncomeExpenses/IncomeNew.html">
+                    <span class="material-symbols-outlined">
+                        swap_vert
+                        </span>
+                    <h3>Income/Expense</h3>
+                </a>
+                <a href="/Budget/BudgetNew.html">
+                    <span class="material-symbols-outlined">
+                        clock_loader_80
+                        </span>
+                    <h3>Budget</h3>
+                </a>               
+                <a href="/Homepage/Homepage.html">
+                    <span class="material-symbols-outlined">
+                        settings
+                        </span>
+                    <h3>Settings</h3>
+                </a>  
+                <a href="/Homepage/Homepage.html">
+                    <span class="material-symbols-outlined">
+                        help
+                        </span>
+                    <h3>Help</h3>
+                </a>
+                <a href="/Login/Login.html">
+                    <span class="material-symbols-outlined">
+                        logout
+                        </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+    </aside>
+    <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Budget</h1>
+            <!-- Analyses -->
+            
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            
+            
+            <div class="container2">
+                
+                <div class="edit-budget-box">
+                    <div class="box-header">
+                      <h2>EDIT BUDGET</h2>
+                    </div>
+                    <div class="box-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="duration">Duration:</label>
+                          <select id="duration" name="duration">
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="budget-amount">Budget amount:</label>
+                          <input type="number" id="budget-amount" name="budget-amount" value="30">
+                        </div>
+                        <div class="form-group">
+                          <label for="category">Category:</label>
+                          <select id="category" name="category">
+                            <option value="entertainment">Entertainment</option>
+                            <option value="food">Food</option>
+                            <option value="transportation">Transportation</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="account">Account:</label>
+                          <select id="account" name="account">
+                            <option value="all">All accounts</option>
+                            <option value="checking">Checking</option>
+                            <option value="savings">Savings</option>
+                          </select>
+                        </div>
+                        <div class="button-group">
+                          <button type="button" class="cancel-button">CANCEL</button>
+                          <button type="submit" class="save-button">SAVE</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                
+            </div>
+            
+            <civ class ="new-users">
+                
+            <div ng-app="myApp">
+
+                
+                <div ng-controller="myController">
+                  <div class="container2">
+                    <div class="container2">
+                    
+                    <div class="row" ng-repeat="(key, month) in data">
+                      <div class="col-md-2">
+                        <h1>{{key}}</h1>
+                        <h5>{{month.completed}} out of {{month.total}} | {{month.perc}}</h5>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="progress-box">
+                          <div class="progress-completed" ng-repeat="item in month.progressCompleted"></div>
+                          <div class="progress-remaining" ng-repeat="item in month.progressRemaining"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </civ>
+            
+
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    
+
+
+
+
+                    <span class="material-icons-sharp">
+                        light_mode
+                    </span>
+
+
+                    <span class="material-icons-sharp active">
+                        dark_mode
+                    </span>
+
+                    
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>David</b></p>
+                        <small class="text-muted">Beckham</small>
+                    </div>
+                    <div class="profile-photo" id="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                <a href="/Homepage/Homepage.html">
+                    <img src="images/logo.png">
+                </a>
+                    <h2>Budget<h2>
+                    <h2 id="animated-word">Frog</h2>  
+                    <p>Welcome to our pond</p>
+                    <div class="lightning"></div>
+                </div>
+            </div>
+            
+            
+            
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+                
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            account_balance
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Bank</h3>
+                            <small class="text_muted">
+                               Pay $200 to Account no.585555633
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            engineering
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>CEO</h3>
+                            <small class="text_muted">
+                               Pay $100 to Account no.2252177252
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                
+                </div><div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            savings
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Savings</h3>
+                            <small class="text_muted">
+                                Credit $566 to savings account
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                    
+                </div><div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Wallet</h3>
+                            <small class="text_muted">
+                               Move $54 to my food wallet
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            checkbook
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Cheque</h3>
+                            <small class="text_muted">
+                               pay $458 to Acoount No. 65454554
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="incomecal.js"></script>
+    <script src="Dashboard.js"></script>
+    <script src="bar.js"></script>
+    <script src="Editbox.js"></script>
+
+    
+</body>
+
+</html>

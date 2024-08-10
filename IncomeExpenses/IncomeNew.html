@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="IncomeNew.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <title>BudgetFrog</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside id = "sidebar">
+            <div class="toggle">
+                <!-- <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Budget<span class="success">Frog</span></h2>
+                </div>-->
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                    <h2><span class="success">Close</span></h2>
+                </div>
+            </div>
+            <!-- Sidebar Section sidebar -->
+            <div class="sidebar">
+                <a href="/Homepage/Homepage.html">
+                    <span class="material-symbols-outlined">
+                        home
+                        </span>
+                    <h3>Home</h3>
+                </a>
+                
+
+
+
+
+                <a href="/Dashboard/Dashboardnew.html">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                        </span>
+                    <h3>Overview</h3>
+                </a>
+                <a href="/Transactions/TransactionsNew.html">
+                    <span class="material-symbols-outlined">
+                        autorenew
+                        </span>
+                    <h3>Transactions</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="/IncomeExpenses/IncomeNew.html">
+                    <span class="material-symbols-outlined">
+                        swap_vert
+                        </span>
+                    <h3>Income/Expense</h3>
+                </a>
+                <a href="/Budget/BudgetNew.html">
+                    <span class="material-symbols-outlined">
+                        clock_loader_80
+                        </span>
+                    <h3>Budget</h3>
+                </a>               
+                <a href="/Homepage/Homepage.html">
+                    <span class="material-symbols-outlined">
+                        settings
+                        </span>
+                    <h3>Settings</h3>
+                </a>  
+                <a href="/Homepage/Homepage.html">
+                    <span class="material-symbols-outlined">
+                        help
+                        </span>
+                    <h3>Help</h3>
+                </a>
+                <a href="/Login/Login.html">
+                    <span class="material-symbols-outlined">
+                        logout
+                        </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+    </aside>
+    <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Income/Expenses</h1>
+           
+            
+            <div class="new-users1">
+                
+                <div class="graph">
+                    <h2 class="centered">Expenses </h2>
+                    <div class="user">
+                        <div class="user-profile">
+                            
+                                <div class="year-stats">
+                                    <div class="month-group">
+                                        <div class="bar h-100"></div>
+                                        <p class="month">Jan</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-50"></div>
+                                        <p class="month">Feb</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-75"></div>
+                                        <p class="month">Mar</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-25"></div>
+                                        <p class="month">Apr</p>
+                                    </div>
+                                    <div class="month-group selected">
+                                        <div class="bar h-100"></div>
+                                        <p class="month">May</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-50"></div>
+                                        <p class="month">Jun</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-75"></div>
+                                        <p class="month">Jul</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-25"></div>
+                                        <p class="month">Aug</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-50"></div>
+                                        <p class="month">Sep</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-75"></div>
+                                        <p class="month">Oct</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-25"></div>
+                                        <p class="month">Nov</p>
+                                    </div>
+                                    <div class="month-group">
+                                        <div class="bar h-100"></div>
+                                        <p class="month">Dec</p>
+                                    </div>
+                                </div>
+                        
+                                
+                            
+                        
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-users1">
+                
+                        <div class="graph">
+                            <h2 class="centered">Income </h2>
+                            <div class="user">
+                                <div class="user-profile">
+                                    
+                                        <div class="year-stats">
+                                            <div class="month-group">
+                                                <div class="bar h-50"></div>
+                                                <p class="month">Jan</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-75"></div>
+                                                <p class="month">Feb</p>
+                                            </div>
+                                            <div class="month-group selected">
+                                                <div class="bar h-100"></div>
+                                                <p class="month">Mar</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-50"></div>
+                                                <p class="month">Apr</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-75"></div>
+                                                <p class="month">May</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-75"></div>
+                                                <p class="month">Jun</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-100"></div>
+                                                <p class="month">Jul</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-75"></div>
+                                                <p class="month">Aug</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-50"></div>
+                                                <p class="month">Sep</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-100"></div>
+                                                <p class="month">Oct</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-75"></div>
+                                                <p class="month">Nov</p>
+                                            </div>
+                                            <div class="month-group">
+                                                <div class="bar h-50"></div>
+                                                <p class="month">Dec</p>
+                                            </div>
+                                        </div>
+                                
+                                        
+                                    
+                                
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                    
+            </div>
+            <div class="new-users1">
+                <div class="graph"> 
+                    <div id="incomePieChart" style="width: 50%; height: 400px; float: left;">
+                    
+                </div>
+                <div id="expensePieChart" style="width: 50%; height: 400px; float: left;"></div>  
+                </div>
+                
+                </div>
+
+
+
+            </div>
+
+
+            
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    
+
+
+
+
+                    <span class="material-icons-sharp">
+                        light_mode
+                    </span>
+
+
+                    <span class="material-icons-sharp active">
+                        dark_mode
+                    </span>
+
+                    
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>David</b></p>
+                        <small class="text-muted">Beckham</small>
+                    </div>
+                    <div class="profile-photo" id="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                <a href="/Homepage/Homepage.html">
+                    <img src="images/logo.png">
+                </a>
+                    <h2>Budget<h2>
+                    <h2 id="animated-word">Frog</h2>  
+                    <p>Welcome to our pond</p>
+                    <div class="lightning"></div>
+                </div>
+            </div>
+            
+            
+            
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+                
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            account_balance
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Bank</h3>
+                            <small class="text_muted">
+                               Pay $200 to Account no.585555633
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            engineering
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>CEO</h3>
+                            <small class="text_muted">
+                               Pay $100 to Account no.2252177252
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                
+                </div><div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            savings
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Savings</h3>
+                            <small class="text_muted">
+                                Credit $566 to savings account
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                    
+                </div><div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Wallet</h3>
+                            <small class="text_muted">
+                               Move $54 to my food wallet
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            checkbook
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Cheque</h3>
+                            <small class="text_muted">
+                               pay $458 to Acoount No. 65454554
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                        <button id="generatePDFButton">Generate PDF</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="Dashboard.js"></script>
+    <script src="piechart1.js"></script>
+    
+    
+
+
+    
+</body>
+
+</html>
