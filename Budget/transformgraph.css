@@ -1,0 +1,62 @@
+.container2 {
+  background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.progress-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  animation: expand 2.5s ease forwards;
+}
+
+.progress-completed {
+  width: 15px;
+  height: 80px;
+  border-radius: 15px;
+  margin: 1%;
+  background: linear-gradient(
+    100deg,
+    #05d496 20%,
+    #01ab78 30%,
+    #009065 40%,
+    #004631 80%
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0 0 0 0.5px rgba(49, 49, 93, 0.03),
+    0 2px 5px 0 rgba(49, 49, 93, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.progress-remaining {
+  width: 15px;
+  height: 80px;
+  border-radius: 15px;
+  margin: 1%;
+  background: rgba(211, 211, 211, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0 0 0 0.5px rgba(49, 49, 93, 0.03),
+    0 2px 5px 0 rgba(49, 49, 93, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+@keyframes expand {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
