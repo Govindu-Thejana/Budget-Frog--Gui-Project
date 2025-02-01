@@ -64,7 +64,7 @@ const toPDF = function (customers_table) {
     <main class="table" id="customers_table">${customers_table.innerHTML}</main>`;
 
     const new_window = window.open();
-     new_window.document.write(html_code);
+    new_window.document.write(html_code);
 
     setTimeout(() => {
         new_window.print();
