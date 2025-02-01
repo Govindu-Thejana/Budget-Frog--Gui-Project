@@ -1,18 +1,14 @@
 {
-    "routes": [
-      { "handle": "filesystem" },
-      
-      { "src": "/", "dest": "/Homepage/index.html" },
-      { "src": "/Dashboard", "dest": "/Dashboard/index.html" },
-      { "src": "/Homepage", "dest": "/Homepage/index.html" },
-      { "src": "/Login", "dest": "/Login/index.html" },
-      { "src": "/Budget", "dest": "/Budget/index.html" },
-      { "src": "/Transactions", "dest": "/Transactions/index.html" },
-      { "src": "/IncomeExpenses", "dest": "/IncomeExpenses/index.html" },
-  
-      { "src": "/.*", "status": 404, "dest": "/404.html" }
+    "rewrites": [
+      { "source": "/", "destination": "/Homepage/index.html" },
+      { "source": "/Dashboard", "destination": "/Dashboard/index.html" },
+      { "source": "/Homepage", "destination": "/Homepage/index.html" },
+      { "source": "/Login", "destination": "/Login/index.html" },
+      { "source": "/Budget", "destination": "/Budget/index.html" },
+      { "source": "/Transactions", "destination": "/Transactions/index.html" },
+      { "source": "/IncomeExpenses", "destination": "/IncomeExpenses/index.html" },
+      { "source": "/404", "destination": "/404.html" }
     ],
-    
     "headers": [
       {
         "source": "/:path*.(css|js)",
