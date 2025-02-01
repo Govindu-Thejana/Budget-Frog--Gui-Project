@@ -1,11 +1,10 @@
-# Budget Frog 🐸
+# Budget Frog 🐸 Your Personal Finance Tracker 💸
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A friendly budget tracking web application that helps you manage your personal finances effectively.
 
-![Budget Frog Screenshot](./screenshots/demo.png) <!-- Add your screenshot path -->
-
+![Budget Frog Screenshot](./Screenshots/home.png)
 ## Features
 
 - **Expense/Income Tracking**: Add and categorize financial transactions
@@ -29,3 +28,12 @@ A friendly budget tracking web application that helps you manage your personal f
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/budget-frog.git
+##
+![Budget Frog Screenshot](./Screenshots/dashboard.png)
+##
+![Budget Frog Screenshot](./Screenshots/incomeexpense.png)
+##
+![Budget Frog Screenshot](./Screenshots/budget.png)
+##
+![Budget Frog Screenshot](./Screenshots/transactions.png)
+
