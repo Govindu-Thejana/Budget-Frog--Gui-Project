@@ -1,4 +1,5 @@
-# Budget Frog 🐸 Your Personal Finance Tracker 💸
+# Budget Frog 🐸 Your Personal Finance Tracker 💸 
+Check out Budget Frog in action: [Live Demo](https://budgetfrog.vercel.app/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
